@@ -9,8 +9,8 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-  <h1>
+<section class="flex flex-col justify-center items-center flex-[0.6] gap-5">
+  <h1 class="text-3xl w-full">
     <span class="welcome">
       <picture>
         <source srcset={welcome} type="image/webp" />
@@ -22,25 +22,13 @@
   </h1>
 
   <h2>
-    try editing <strong>src/routes/+page.svelte</strong>
+    try editing <strong class="text-primary">src/routes/+page.svelte</strong>
   </h2>
 
   <Counter />
 </section>
 
 <style>
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0.6;
-  }
-
-  h1 {
-    width: 100%;
-  }
-
   .welcome {
     display: block;
     position: relative;
